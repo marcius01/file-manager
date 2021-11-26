@@ -17,6 +17,7 @@ dependencies {
     //lombok
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
     
     //logging
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.32'
@@ -25,6 +26,7 @@ dependencies {
 
     //laf
     implementation group: 'com.formdev', name: 'flatlaf', version: '1.6.4'
+    implementation group: 'com.formdev', name: 'flatlaf-extras', version: '1.6.4'
 
     //test
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
@@ -36,6 +38,11 @@ dependencies {
 
     //dto
     implementation 'com.google.code.gson:gson:2.8.9'
+
+    //persistence
+    implementation 'org.apache.derby:derby:10.15.2.0'
+    implementation 'org.apache.derby:derbytools:10.15.2.0'
+    implementation 'org.mybatis:mybatis:3.5.7'
 
 }
 
